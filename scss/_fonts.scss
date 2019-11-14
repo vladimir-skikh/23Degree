@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+@mixin regular {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
+@mixin medium {
+  font-family: 'Roboto-Medium', sans-serif;
+}
+@mixin light {
+  font-family: 'Roboto-Light', sans-serif;
+}
+@mixin bold {
+  font-family: 'Roboto-Bold', sans-serif;
+}

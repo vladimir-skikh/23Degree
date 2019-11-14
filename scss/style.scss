@@ -1,0 +1,32 @@
+@import 'fonts';
+@import 'variables';
+@import 'sections/header';
+
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  @include regular;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.button {
+  padding: 20px 50px;
+  color: $white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 3rem;
+  background-color: $blue;
+  outline: none;
+}
