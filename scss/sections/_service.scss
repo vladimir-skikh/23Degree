@@ -1,13 +1,13 @@
 .service {
   &-block {
-    flex-basis: 45%;
+    flex-basis: 50%;
     margin-bottom: 20px;
+    width: 320px;
+    padding: 0 15px;
     &-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      flex-grow: 1;
-      padding: 0 30px;
     }
     &-title {
       margin: 0;
@@ -23,7 +23,26 @@
       line-height: 2.4rem;
     }
     &-img {
-      flex-basis: 45%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  &-2 {
+    order: -1;
+  }
+  &-5 {
+    order: 6;
+  }
+}
+@media screen and (max-width: 576px) {
+  .service {
+    &-block {
+      flex-basis: 90%;
+      &-text {
+        margin-bottom: 30px;
+      }
     }
   }
 }

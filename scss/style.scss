@@ -71,6 +71,11 @@ body {
 }
 @media screen and (max-width: 576px) {
   html {
-    font-size: $font-sm ;
+    font-size: $font-sm;
+  }
+  .wrapper {
+    &-services {
+      justify-content: center;
+    }
   }
 }
