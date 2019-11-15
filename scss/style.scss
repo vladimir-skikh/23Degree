@@ -1,6 +1,8 @@
 @import 'fonts';
 @import 'variables';
 @import 'sections/header';
+@import 'sections/service';
+@import 'sections/process';
 
 
 
@@ -16,9 +18,40 @@ body {
   font-size: 14px;
   @include regular;
 }
+.section {
+  padding-top: 50px;
+  &-title {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: $title;
+    font-size: 3.6rem;
+    font-weight: 300;
+    line-height: 3.8rem;
+    margin-bottom: 6rem;
+    
+    &:after {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%) translateY(22px);
+      content: '';
+      display: block;
+      width: 37.5rem;
+      height: 1px;
+      background-color: $blue;
+    }
+  }
+}
 .wrapper {
   margin: 0 auto;
   max-width: 1140px;
+  &-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .button {
   padding: 2rem 5rem;

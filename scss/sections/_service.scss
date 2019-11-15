@@ -1,0 +1,29 @@
+.service {
+  &-block {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+      padding: 0 30px;
+    }
+    &-title {
+      margin: 0;
+      color: $blue;
+      @include light;
+      font-size: 2.8rem;
+      font-weight: 300;
+    }
+    &-description {
+      color: $text;
+      @include light;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+    &-img {
+      flex-basis: 45%;
+    }
+  }
+}
