@@ -63,6 +63,21 @@ body {
   border-radius: 3rem;
   background-color: $blue;
   outline: none;
+  transition: background-color ease 0.2s;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($blue, 0.8);
+    transition: background-color 0.2s;
+  }
+  &-service {
+    padding: 2rem 3rem;
+    max-width: 18rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  &-hide {
+    display: none;
+  }
 }
 @media screen and (max-width: 992px) {
   html {
@@ -76,6 +91,12 @@ body {
   .wrapper {
     &-services {
       justify-content: center;
+    }
+  }
+  .button {
+    &-hide {
+      display: block;
+      order: 99;
     }
   }
 }
