@@ -1,0 +1,41 @@
+.portfolio {
+  &-category {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+    max-width: 824px;
+    padding: 4px 10px;
+    border: 1px solid $blue;
+    border-radius: 3rem;
+    &-link {
+      padding: 15px 30px;
+      @include light;
+      font-weight: 300;
+      color: $blue;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:not(:last-child) {
+        border-right: 1px solid $blue;
+      }
+      &:hover {
+        position: relative;
+        background-color: $blue;
+        color: $white;
+        border-radius: 10px;
+        border: none;
+        //Додумать hover-эффект для ссылки
+      }
+    }
+  }
+  &-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-block {
+      flex-basis: 30%;
+      margin-bottom: 3rem;
+    }
+  }
+}
