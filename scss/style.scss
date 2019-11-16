@@ -3,6 +3,7 @@
 @import 'sections/header';
 @import 'sections/service';
 @import 'sections/process';
+@import 'sections/advantage';
 
 
 
@@ -31,7 +32,6 @@ body {
     font-weight: 300;
     line-height: 3.8rem;
     margin-bottom: 6rem;
-    
     &:after {
       position: relative;
       left: 50%;
@@ -53,6 +53,11 @@ body {
     justify-content: space-between;
   }
   &-process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &-advantage {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

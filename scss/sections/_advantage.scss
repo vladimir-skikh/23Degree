@@ -1,0 +1,36 @@
+.advantage {
+  &-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 25%;
+    padding: 0 10px;
+    &-text {
+      text-align: center;
+      color: #3f3f3f;
+      line-height: 20px;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    &-img {
+      width: 124px;
+      height: 78px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid $blue;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantage {
+    &-block {
+      flex-basis: 40%;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .advantage {
+    &-block {
+      flex-basis: 60%;
+    }
+  }
+}
