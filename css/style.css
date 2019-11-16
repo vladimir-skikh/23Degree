@@ -246,24 +246,19 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header-request {
-    border: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .header-top-phone {
     display: none;
   }
   .header-top-phone__icon {
     font-size: 0 !important;
   }
+  .header-request {
+    height: 100%;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  .header-request {
-    height: 100%;
-  }
   .header-request-input {
     position: static;
     -ms-flex-preferred-size: 70%;
@@ -381,9 +376,65 @@
   line-height: 3rem;
 }
 
+.process-block-text {
+  text-align: center;
+}
+
 .process-block-img img {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .process-block {
+    margin-bottom: 20px;
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+  .process-block-description {
+    font-size: 2.5rem;
+    line-height: 14px;
+  }
+  .process-block-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .process-block-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .process-block-3 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .process-block-4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .process-block-5 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .process-block-6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .process-block-7 {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  .process-block-8 {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
 }
 
 * {
@@ -404,7 +455,7 @@ body {
 }
 
 .section {
-  padding-top: 50px;
+  padding-top: 5rem;
 }
 
 .section-title {
@@ -414,7 +465,7 @@ body {
   padding: 0;
   text-align: center;
   color: #363636;
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 3.8rem;
   margin-bottom: 6rem;
@@ -496,11 +547,17 @@ body {
   html {
     font-size: 8px;
   }
+  .wrapper {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
   html {
     font-size: 7px;
+  }
+  .wrapper {
+    padding: 0;
   }
   .wrapper-services {
     -webkit-box-pack: center;

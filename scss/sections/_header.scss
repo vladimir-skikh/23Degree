@@ -178,13 +178,6 @@
 }
 @media screen and (max-width: 768px) {
   .header {
-    &-request {
-      border: none;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .header {
     &-top {
       &-phone {
         &__icon {
@@ -193,12 +186,15 @@
         display: none;
       }
     }
+    &-request {
+      height: 100%;
+      border: none;
+    }
   }
 }
 @media screen and (max-width: 576px) {
   .header {
     &-request {
-      height: 100%;
       &-input {
         position: static;
         flex-basis: 70%;
