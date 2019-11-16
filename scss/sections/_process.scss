@@ -1,0 +1,21 @@
+.process {
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    &-description {
+      @include light;
+      color: $text;
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 3rem;
+    }
+    &-img {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

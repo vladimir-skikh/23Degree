@@ -52,6 +52,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  &-process {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .button {
   padding: 2rem 5rem;
