@@ -650,6 +650,89 @@
   }
 }
 
+.team-block {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.team-block-avatar {
+  width: 22.5rem;
+  height: 22.5rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.team-block-avatar-1 {
+  background: url("../../images/team-1.png") no-repeat center;
+  background-size: contain;
+}
+
+.team-block-avatar-2 {
+  background: url("../../images/team-2.png") no-repeat center;
+  background-size: contain;
+}
+
+.team-block-avatar-3 {
+  background: url("../../images/team-3.png") no-repeat center;
+  background-size: contain;
+}
+
+.team-block-avatar-4 {
+  background: url("../../images/team-4.png") no-repeat center;
+  background-size: contain;
+}
+
+.team-block-avatar-5 {
+  background: url("../../images/team-5.png") no-repeat center;
+  background-size: contain;
+}
+
+.team-block-avatar-6 {
+  background: url("../../images/team-6.png") no-repeat center;
+  background-size: contain;
+}
+
+.team-block-name {
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #19b5fe;
+  font-family: 'Roboto-Light', sans-serif;
+}
+
+.team-block-place {
+  display: block;
+  text-align: center;
+  font-family: 'Roboto-Light', sans-serif;
+  color: #464646;
+}
+
+@media screen and (max-width: 768px) {
+  .team-block {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team-block-avatar {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -758,6 +841,17 @@ body {
           justify-content: space-between;
 }
 
+.wrapper-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .button {
   padding: 2rem 5rem;
   font-family: 'Roboto-Regular', sans-serif;
@@ -797,6 +891,13 @@ body {
   }
   .wrapper {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper-team {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

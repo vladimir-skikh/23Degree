@@ -6,6 +6,7 @@
 @import 'sections/advantage';
 @import 'sections/portfolio';
 @import 'sections/blog';
+@import 'sections/team';
 
 * {
   box-sizing: border-box;
@@ -74,6 +75,11 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  &-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .button {
   padding: 2rem 5rem;
@@ -107,6 +113,13 @@ body {
   }
   .wrapper {
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    &-team {
+      justify-content: space-around;
+    }
   }
 }
 @media screen and (max-width: 576px) {
