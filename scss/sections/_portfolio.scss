@@ -58,6 +58,12 @@
         height: 100%;
         width: 100%;
       }
+      &:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 15px -5px black;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
     }
   }
 }

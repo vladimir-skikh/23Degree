@@ -5,7 +5,7 @@
 @import 'sections/process';
 @import 'sections/advantage';
 @import 'sections/portfolio';
-
+@import 'sections/blog';
 
 * {
   box-sizing: border-box;
@@ -69,6 +69,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  &-blog {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .button {
