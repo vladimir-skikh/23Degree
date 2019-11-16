@@ -719,6 +719,73 @@
   color: #464646;
 }
 
+.team-quote {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.team-quote::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: '';
+  width: 4.5rem;
+  height: 3.5rem;
+  background: url("../../images/quote-open.svg") no-repeat center;
+  background-size: contain;
+}
+
+.team-quote::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  content: '';
+  width: 4.5rem;
+  height: 3.5rem;
+  background: url("../../images/quote-close.svg") no-repeat center;
+  background-size: contain;
+}
+
+.team-quote-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto-Light', sans-serif;
+  color: #464646;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.team-quote-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 945px;
+  font-family: 'Roboto-Light', sans-serif;
+  color: #464646;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+.team-quote-name {
+  display: block;
+  font-family: 'Roboto-Medium', sans-serif;
+  color: #464646;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.team-quote-place {
+  display: block;
+  font-family: 'Roboto-Light', sans-serif;
+  color: #464646;
+  font-size: 1.8rem;
+}
+
 @media screen and (max-width: 768px) {
   .team-block {
     -ms-flex-preferred-size: 40%;
@@ -730,6 +797,15 @@
   .team-block-avatar {
     width: 20rem;
     height: 20rem;
+  }
+  .team-quote {
+    margin-top: 3rem;
+  }
+  .team-quote::before {
+    display: none;
+  }
+  .team-quote::after {
+    display: none;
   }
 }
 

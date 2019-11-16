@@ -50,6 +50,66 @@
       color: $text;
     }
   }
+  &-quote {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    position: relative;
+    text-align: center;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 4.5rem;
+      height: 3.5rem;
+      background: url('../../images/quote-open.svg') no-repeat center;
+      background-size: contain;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      content: '';
+      width: 4.5rem;
+      height: 3.5rem;
+      background: url('../../images/quote-close.svg') no-repeat center;
+      background-size: contain;
+    }
+    &-title {
+      margin: 0;
+      padding: 0;
+      @include light;
+      color: $text;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    &-text {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 945px;
+      @include light;
+      color: $text;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+    }
+    &-name {
+      display: block;
+      @include medium;
+      color: $text;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    &-place {
+      display: block;
+      @include light;
+      color: $text;
+      font-size: 1.8rem;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .team {
@@ -64,6 +124,15 @@
       &-avatar {
         width: 20rem;
         height: 20rem;
+      }
+    }
+    &-quote {
+      margin-top: 3rem;
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
       }
     }
   }
