@@ -488,7 +488,6 @@
 }
 
 .portfolio-category {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,18 +496,34 @@
           justify-content: center;
   margin-bottom: 27px;
   max-width: 824px;
-  padding: 4px 10px;
+  padding: 4px 5px;
   border: 1px solid #19b5fe;
   border-radius: 3rem;
 }
 
 .portfolio-category-link {
-  padding: 15px 30px;
+  position: relative;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
   font-family: 'Roboto-Light', sans-serif;
   font-weight: 300;
   color: #19b5fe;
   text-decoration: none;
   text-transform: uppercase;
+  z-index: 1;
+}
+
+.portfolio-category-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 3rem;
 }
 
 .portfolio-category-link:not(:last-child) {
@@ -516,11 +531,21 @@
 }
 
 .portfolio-category-link:hover {
-  position: relative;
-  background-color: #19b5fe;
   color: #fff;
-  border-radius: 10px;
   border: none;
+}
+
+.portfolio-category-link:hover::before {
+  border-radius: 10px;
+  background-color: #19b5fe;
+  width: 102%;
+  left: -2%;
+  -webkit-transform: scaleY(1.3);
+          transform: scaleY(1.3);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .portfolio-projects {
@@ -544,6 +569,42 @@
   margin-bottom: 3rem;
 }
 
+.portfolio-projects-block img {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-projects-block {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-category {
+    padding: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: none;
+  }
+  .portfolio-category a.portfolio-category-link {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    border: none;
+  }
+  .portfolio-category a.portfolio-category-link::before {
+    display: none;
+  }
+  .portfolio-category a.portfolio-category-link:hover {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #19b5fe;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -562,6 +623,7 @@ body {
 }
 
 .section {
+  padding: 0 10px;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
