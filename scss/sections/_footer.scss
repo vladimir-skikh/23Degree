@@ -1,0 +1,74 @@
+.footer {
+  background-color: #24241f;
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin-bottom: 6.5rem;
+    &-nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 49rem;
+      max-height: 5rem;
+      &-link {
+        @include light;
+        text-decoration: none;
+        color: $white;
+        line-height: 2.4rem;
+        font-weight: 300;
+      }
+      
+    }
+    &-social {
+      &-text {
+        display: block;
+        @include light;
+        color: $white;
+        margin-bottom: 5px;
+      }
+      &-link {
+        font-size: 0;
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+        &::before {
+          content: '';
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border: 1px solid $white;
+          border-radius: 5px;
+        }
+      }
+      .fb {
+        &::before {
+          background: url('../../images/fb-icon.svg') no-repeat center;
+        }
+      }
+      .gpl {
+        &::before {
+          background: url('../../images/g-icon.svg') no-repeat center;
+        }
+      }
+      .inst {
+        &::before {
+          background: url('../../images/inst-icon.svg') no-repeat center;
+        }
+      }
+    }
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid rgba($white, 0.2);
+    &-copyrights {
+      display: block;
+      color: $white;
+      @include light;
+    }
+  }
+}
