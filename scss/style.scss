@@ -7,6 +7,8 @@
 @import 'sections/portfolio';
 @import 'sections/blog';
 @import 'sections/team';
+@import 'sections/question';
+@import 'sections/map';
 @import 'sections/footer';
 
 * {
@@ -25,7 +27,6 @@ body {
   padding: 0 10px;
   padding-top: 5rem;
   padding-bottom: 5rem; 
-
   &-title {
     position: relative;
     display: block;
@@ -46,6 +47,23 @@ body {
       width: 37.5rem;
       height: 1px;
       background-color: $blue;
+    }
+  }
+  &-half {
+    min-height: 50vh;
+    &-title {
+      color: $white;
+      margin-bottom: 4rem;
+      &:after {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) translateY(22px);
+        content: '';
+        display: block;
+        width: 37.5rem;
+        height: 1px;
+        background-color: $white;
+      }
     }
   }
 }
@@ -81,6 +99,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  &-question {
+    max-width: 1070px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .button {
   padding: 2rem 5rem;
@@ -95,7 +118,7 @@ body {
   transition: background-color ease 0.2s;
   &:hover {
     cursor: pointer;
-    background-color: rgba($blue, 0.8);
+    background-color: lighten($blue, 13%);
     transition: background-color 0.2s;
   }
   &-service {
@@ -103,6 +126,12 @@ body {
     max-width: 18rem;
     font-size: 1.4rem;
     line-height: 1.6rem;
+  }
+  &-question {
+    padding: 20px 45px;
+    max-width: 213px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   &-hide {
     display: none;
@@ -112,8 +141,20 @@ body {
   html {
     font-size: $font-md;
   }
+  .section {
+    &-half {
+      padding-bottom: 7rem;
+    }
+  }
   .wrapper {
     padding: 0 20px;
+    &-question {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .button-question {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 992px) {
