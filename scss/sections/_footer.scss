@@ -3,8 +3,9 @@
   &-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 4rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: 6rem;
     &-nav {
       display: flex;
       flex-direction: column;
@@ -18,7 +19,6 @@
         line-height: 2.4rem;
         font-weight: 300;
       }
-      
     }
     &-social {
       &-text {
@@ -69,6 +69,40 @@
       display: block;
       color: $white;
       @include light;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    &-top {
+      &-nav {
+        max-height: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    &-top {
+      padding-top: 2rem;
+      &-nav {
+        &-link {
+          margin-bottom: 5px;
+        }
+      }
+      &-social {
+        text-align: right;
+        &-link {
+          display: block;
+          &:not(:last-child) {
+            margin-right: 0px;
+          }
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &-bottom {
+      padding-bottom: 2rem;
     }
   }
 }
