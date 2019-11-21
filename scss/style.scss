@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'sections/header';
 @import 'sections/service';
+@import 'sections/price';
 @import 'sections/process';
 @import 'sections/advantage';
 @import 'sections/portfolio';
@@ -64,6 +65,16 @@ body {
         height: 1px;
         background-color: $white;
       }
+    }
+    &-description {
+      margin: 0;
+      text-align: center;
+      @include light;
+      color: $white;
+      font-size: 2.6rem;
+      line-height: 3.8rem;
+      font-weight: 300;
+      margin-bottom: 4rem;
     }
   }
 }

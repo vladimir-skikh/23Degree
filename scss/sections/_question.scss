@@ -1,16 +1,6 @@
 .question {
   background: $title url('../../images/question-bg.png') no-repeat center;
   background-size: cover;
-  &-description {
-    margin: 0;
-    text-align: center;
-    @include light;
-    color: $white;
-    font-size: 2.6rem;
-    line-height: 3.8rem;
-    font-weight: 300;
-    margin-bottom: 4rem;
-  }
   &-form {
     flex-basis: 69%;
     display: flex;
