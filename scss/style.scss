@@ -115,6 +115,10 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  &-price {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .button {
   padding: 2rem 5rem;
@@ -146,6 +150,12 @@ body {
   }
   &-hide {
     display: none;
+  }
+  &-price {
+    margin: 15px 0 20px 0;
+    max-height: 50px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
   }
 }
 @media screen and (max-width: 992px) {

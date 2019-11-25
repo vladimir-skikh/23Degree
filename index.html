@@ -96,33 +96,47 @@
         <div class="price-col-1">
           <div class="price-area price-block">
             <h3 class="price-block-title">Площадь помещения:</h3>
-            <div class="price-area-num">
-              <span class="section-area-num-1">100м<sup>2</sup>></span>
-              <span class="section-area-num-2">10 000м<sup>2</sup>></span>
-              <span class="section-area-num-3">250 000м<sup>2</sup>></span>
-              <span class="section-area-num-4">500 000м<sup>2</sup>></span>
-            </div>
-            <div class="price-area-input">
-              <input type="radio" class="price-area-input-1">
-              <input type="radio" class="price-area-input-2">
-              <input type="radio" class="price-area-input-3">
-              <input type="radio" class="price-area-input-4">
-            </div>
+            <form class="price-area-form">
+              <div class="price-area-block price-area-block-1">
+                <input type="radio" class="price-area-input-1 price-area-input" name="price-value" id="price-radio-1">
+                <label class="price-area-label price-area-label-1" for="price-radio-1">100м<sup>2</sup></label>
+              </div>
+              <div class="price-area-block price-area-block-2">
+                <input type="radio" class="price-area-input-2 price-area-input" name="price-value" id="price-radio-2">
+                <label class="price-area-label price-area-label-2" for="price-radio-2">10 000м<sup>2</sup></label>
+              </div>
+              <div class="price-area-block price-area-block-3">
+                <input type="radio" class="price-area-input-3 price-area-input" name="price-value" id="price-radio-3">
+                <label class="price-area-label price-area-label-3" for="price-radio-3">250 000м<sup>2</sup></label>
+              </div>
+              <div class="price-area-block price-area-block-4">
+                <input type="radio" class="price-area-input-4 price-area-input" name="price-value" id="price-radio-4">
+                <label class="price-area-label price-area-label-4" for="price-radio-4">500 000м<sup>2</sup></label>
+              </div>
+            </form>
           </div>
           <!--/.price-area-->
           <div class="price-package price-block">
             <h3 class="price-block-title">Выберите пакет:</h3>
-            <div class="price-packege-type">
-              <div class="price-packege-tipe-1">Light</div>
-              <div class="price-packege-tipe-2">Medium</div>
-              <div class="price-packege-tipe-3">Full</div>
+            <div class="price-package-block">
+              <div class="price-package-type price-package-type-1">Light</div>
+              <div class="price-package-type price-package-type-2 price-package-type-active">Medium</div>
+              <div class="price-package-type price-package-type-3">Full</div>
             </div>
           </div>
           <!--/.price-packege-->
         </div>
         <!-- /.price-col-1 -->
         <div class="price-col-2">
-
+          <span class="price-square price-property">Площадь помещения:</span>
+          <span class="price-square-value price-property-value">1 000м<sup>2</sup></span>
+          <span class="price-meter price-property">Средняя стоимость м<sup>2</sup>:</span>
+          <span class="price-meter-value price-property-value">800 руб.</span>
+          <span class="price-object price-property">Средняя стоимость объекта:</span>
+          <span class="price-object-value price-property-value">800 000 руб.</span>
+          <button class="button button-price">Получить консультацию специалиста</button>
+          <span class="price-contact">или позвоните нам по телефону:</span>
+          <a href="tel:+77273887177" class="price-contact-phone">+ 7 727 388 71 77</a>
         </div>
         <!-- /.price-col-2 -->
       </div>
