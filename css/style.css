@@ -918,6 +918,28 @@
   }
 }
 
+.partner {
+  background-color: #f5f9fa;
+}
+
+.partner-block {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 20px 25px 40px;
+}
+
+@media screen and (max-width: 576px) {
+  .partner {
+    background-color: #f5f9fa;
+  }
+  .partner-block {
+    margin: 20px 25px 40px;
+  }
+  .partner-block-logo {
+    width: 100px;
+  }
+}
+
 .team-block {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
@@ -1607,6 +1629,37 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.wrapper-partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: scroll;
+}
+
+.wrapper-partners::-webkit-scrollbar {
+  width: 0;
+  height: 10px;
+}
+
+.wrapper-partners::-webkit-scrollbar-track {
+  background-color: rgba(204, 204, 204, 0.5);
+  border: 2px solid #f5f9fa;
+  border-radius: 10px;
+}
+
+.wrapper-partners::-webkit-scrollbar-corner {
+  visibility: hidden;
+}
+
+.wrapper-partners::-webkit-scrollbar-thumb {
+  width: 30px;
+  background: #19b5fe url("../images/scrollbar-thumb.png") no-repeat center;
+  border-radius: 10px;
 }
 
 .button {

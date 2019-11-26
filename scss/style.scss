@@ -7,6 +7,7 @@
 @import 'sections/advantage';
 @import 'sections/portfolio';
 @import 'sections/blog';
+@import 'sections/partner';
 @import 'sections/team';
 @import 'sections/question';
 @import 'sections/map';
@@ -118,6 +119,28 @@ body {
   &-price {
     display: flex;
     justify-content: space-between;
+  }
+  &-partners {
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 10px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba($color: #ccc, $alpha: 0.5);
+      border: 2px solid #f5f9fa;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-corner {
+      visibility: hidden;
+    }
+    &::-webkit-scrollbar-thumb {
+      width: 30px;
+      background: $blue url('../images/scrollbar-thumb.png') no-repeat center;
+      border-radius: 10px;
+    }
   }
 }
 .button {

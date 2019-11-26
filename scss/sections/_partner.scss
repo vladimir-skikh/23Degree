@@ -1,0 +1,18 @@
+.partner {
+  background-color: #f5f9fa;
+  &-block {
+    flex-basis: 30%;
+    margin: 20px 25px 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .partner {
+    background-color: #f5f9fa;
+    &-block {
+      margin: 20px 25px 40px;
+      &-logo {
+        width: 100px;
+      }
+    }
+  }
+}
