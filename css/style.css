@@ -610,6 +610,17 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1150px) {
+  .price-package-type-1:hover::after {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .price-package-type-3:hover::after {
+    -webkit-transform: translateX(-54%);
+            transform: translateX(-54%);
+  }
+}
+
 .process-block {
   display: -webkit-box;
   display: -ms-flexbox;
