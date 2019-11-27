@@ -200,15 +200,19 @@ body {
       flex-wrap: wrap;
       justify-content: center;
     }
+    &-team {
+      justify-content: space-around;
+    }
   }
   .button-question {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .wrapper {
-    &-team {
-      justify-content: space-around;
+    &-header {
+      height: 100%;
+      padding-bottom: 20px;
     }
   }
 }

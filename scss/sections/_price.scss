@@ -91,15 +91,15 @@
         position: absolute;
         right: 2px;
       }
+      &-active::after {
+        transform-origin: center;
+        transform: scale(1.2);
+        box-shadow: 0 0 0 7px $blue inset;
+        transition: transform 0.2s ease;
+      }
     }
     &-input {
       display: none;
-    }
-    &-input:checked ~ label.price-area-label::after {
-      transform-origin: center;
-      transform: scale(1.2);
-      box-shadow: 0 0 0 7px $blue inset;
-      transition: transform 0.2s ease;
     }
   }
   &-package {

@@ -2,8 +2,7 @@
   min-height: 100vh;
   background: #363636 url('../../images/header-bg.png') no-repeat;
   background-size:  cover;
-  padding: 0 5rem;
-  padding-top: 34px;
+  padding: 34px 5rem 20px;
   &-top {
     height: 6rem;
     display: flex;
@@ -189,6 +188,12 @@
     &-request {
       height: 100%;
       border: none;
+      &-input {
+        transform: translateX(0);
+      }
+      &-button {
+        transform: translate(0);
+      }
     }
   }
 }
