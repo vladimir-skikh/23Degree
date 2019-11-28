@@ -8,7 +8,7 @@ for (let package_type of packages) {
     };
     package_type.classList.add('price-package-type-active');
   });
-}
+};
 
 for (let area_type of areas) {
   area_type.addEventListener('click', () => {
@@ -17,7 +17,7 @@ for (let area_type of areas) {
     };
     area_type.classList.add('price-area-label-active');
   });
-}
+};
 
 const calculate_price = () =>  {
   let area_type = document.querySelector('.price-area-label-active');
@@ -35,20 +35,20 @@ const calculate_price = () =>  {
   area_display.innerHTML = (`${area_value} м<sup>2</sup>`);
   meter_display.innerHTML = (`${package_value} руб.`);
   object_display.innerHTML = (`${price} руб.`);
-}
+};
 calculate_price();
 
 for (let package_type of packages) {
   package_type.addEventListener('click', () => {
     calculate_price();
   })
-}
+};
 
 for (let area_type of areas) {
   area_type.addEventListener('click', () => {
     calculate_price();
   })
-}
+};
 
 let portfolio_links = document.querySelectorAll('.portfolio-category-link');
 for (let link of portfolio_links) {
@@ -59,4 +59,4 @@ for (let link of portfolio_links) {
     };
     link.classList.add('portfolio-category-link-active');
   })
-}
+};
