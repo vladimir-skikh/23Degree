@@ -29,7 +29,7 @@
 
 .header {
   min-height: 100vh;
-  background: #363636 url("../../images/header-bg.png") no-repeat;
+  background: #363636 url("https://vladimir-skikh.github.io/23Degree/images/header-bg.png") no-repeat;
   background-size: cover;
   padding: 34px 5rem 20px;
 }
@@ -122,7 +122,7 @@
   display: block;
   width: 46px;
   height: 21px;
-  background-image: url("../../images/menu-icon.svg");
+  background-image: url("https://vladimir-skikh.github.io/23Degree/images/menu-icon.svg");
   margin-bottom: 9px;
 }
 
@@ -363,7 +363,7 @@
 }
 
 .price {
-  background: #464646 url("../../images/price-bg.png") no-repeat center;
+  background: #464646 url("https://vladimir-skikh.github.io/23Degree/images/price-bg.png") no-repeat center;
   background-size: cover;
 }
 
@@ -997,32 +997,32 @@
 }
 
 .team-block-avatar-1 {
-  background: url("../../images/team-1.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/team-1.png") no-repeat center;
   background-size: contain;
 }
 
 .team-block-avatar-2 {
-  background: url("../../images/team-2.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/team-2.png") no-repeat center;
   background-size: contain;
 }
 
 .team-block-avatar-3 {
-  background: url("../../images/team-3.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/team-3.png") no-repeat center;
   background-size: contain;
 }
 
 .team-block-avatar-4 {
-  background: url("../../images/team-4.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/team-4.png") no-repeat center;
   background-size: contain;
 }
 
 .team-block-avatar-5 {
-  background: url("../../images/team-5.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/team-5.png") no-repeat center;
   background-size: contain;
 }
 
 .team-block-avatar-6 {
-  background: url("../../images/team-6.png") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/team-6.png") no-repeat center;
   background-size: contain;
 }
 
@@ -1058,7 +1058,7 @@
   content: '';
   width: 4.5rem;
   height: 3.5rem;
-  background: url("../../images/quote-open.svg") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/quote-open.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -1070,7 +1070,7 @@
   content: '';
   width: 4.5rem;
   height: 3.5rem;
-  background: url("../../images/quote-close.svg") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/quote-close.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -1133,7 +1133,7 @@
 }
 
 .question {
-  background: #363636 url("../../images/question-bg.png") no-repeat center;
+  background: #363636 url("https://vladimir-skikh.github.io/23Degree/images/question-bg.png") no-repeat center;
   background-size: cover;
 }
 
@@ -1437,15 +1437,15 @@
 }
 
 .footer-top-social .fb::before {
-  background: url("../../images/fb-icon.svg") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/fb-icon.svg") no-repeat center;
 }
 
 .footer-top-social .gpl::before {
-  background: url("../../images/g-icon.svg") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/g-icon.svg") no-repeat center;
 }
 
 .footer-top-social .inst::before {
-  background: url("../../images/inst-icon.svg") no-repeat center;
+  background: url("https://vladimir-skikh.github.io/23Degree/images/inst-icon.svg") no-repeat center;
 }
 
 .footer-bottom {
@@ -1691,7 +1691,7 @@ body {
 
 .wrapper-partners::-webkit-scrollbar-thumb {
   width: 30px;
-  background: #19b5fe url("../images/scrollbar-thumb.png") no-repeat center;
+  background: #19b5fe url("..https://vladimir-skikh.github.io/23Degree/images/scrollbar-thumb.png") no-repeat center;
   border-radius: 10px;
 }
 
