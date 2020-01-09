@@ -29,7 +29,7 @@
 
 .header {
   min-height: 100vh;
-  background: #363636 url("https://vladimir-skikh.github.io/23Degree/images/header-bg.png") no-repeat;
+  background: #363636 url('https://vladimir-skikh.github.io/23Degree/images/header-bg.png') no-repeat;
   background-size: cover;
   padding: 34px 5rem 20px;
 }
