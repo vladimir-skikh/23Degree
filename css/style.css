@@ -33,7 +33,7 @@
 
 .header {
   min-height: 100vh;
-  background: #363636 url("../../images/header-bg.png") no-repeat;
+  background: #363636 url("../../images/header-bg.jpg") no-repeat;
   background-size: cover;
   padding: 34px 5rem 20px;
 }
