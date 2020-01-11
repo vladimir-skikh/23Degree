@@ -1695,7 +1695,7 @@ body {
 
 .wrapper-partners::-webkit-scrollbar-thumb {
   width: 30px;
-  background: #19b5fe url("../images/scrollbar-thumb.png") no-repeat center;
+  background: #19b5fe url("https://vladimir-skikh.github.io/23Degree/images/scrollbar-thumb.png") no-repeat center;
   border-radius: 10px;
 }
 
