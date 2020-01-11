@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url('https://vladimir-skikh.github.io/23Degree/fonts/Roboto-Bold.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url("/fonts/Roboto-Medium.ttf") format("truetype");
+  src: url('https://vladimir-skikh.github.io/23Degree/fonts/Roboto-Medium.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url("/fonts/Roboto-Light.ttf") format("truetype");
+  src: url('https://vladimir-skikh.github.io/23Degree/fonts/Roboto-Light.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url('https://vladimir-skikh.github.io/23Degree/fonts/Roboto-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
